@@ -124,19 +124,19 @@ open class SwiftMessagesSegue: UIStoryboardSegue {
     }
 
     /// The presentation style to use. See the SwiftMessages.PresentationStyle for details.
-    public var presentationStyle: SwiftMessages.PresentationStyle {
+    public var presentationStyle: SwiftMessage.PresentationStyle {
         get { return messenger.defaultConfig.presentationStyle }
         set { messenger.defaultConfig.presentationStyle = newValue }
     }
 
     /// The dim mode to use. See the SwiftMessages.DimMode for details.
-    public var dimMode: SwiftMessages.DimMode {
+    public var dimMode: SwiftMessage.DimMode {
         get { return messenger.defaultConfig.dimMode}
         set { messenger.defaultConfig.dimMode = newValue }
     }
     
     // duration
-    public var duration: SwiftMessages.Duration {
+    public var duration: SwiftMessage.Duration {
         get { return messenger.defaultConfig.duration}
         set { messenger.defaultConfig.duration = newValue }
     }
@@ -150,7 +150,7 @@ open class SwiftMessagesSegue: UIStoryboardSegue {
     }
 
     /// Specifies an optional array of event listeners.
-    public var eventListeners: [SwiftMessages.EventListener] {
+    public var eventListeners: [SwiftMessage.EventListener] {
         get { return messenger.defaultConfig.eventListeners }
         set { messenger.defaultConfig.eventListeners = newValue }
     }
@@ -197,7 +197,7 @@ open class SwiftMessagesSegue: UIStoryboardSegue {
         }
     }
 
-    private var messenger = SwiftMessages()
+    private var messenger = SwiftMessage()
     private var selfRetainer: SwiftMessagesSegue? = nil
     private lazy var hider = { return TransitioningDismisser(segue: self) }()
 
