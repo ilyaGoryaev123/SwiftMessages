@@ -77,7 +77,7 @@
 		86B48AFB1D5A41C900063E2B /* SwiftMessagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B48AFA1D5A41C900063E2B /* SwiftMessagesTests.swift */; };
 		86BBA8F91D5E01FC00FE8F16 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86BBA8F81D5E01FC00FE8F16 /* CardView.xib */; };
 		86BBA8FC1D5E03F100FE8F16 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E21821D4D025200594A41 /* MessageView.swift */; };
-		86BBA8FD1D5E03F800FE8F16 /* SwiftMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864495581D4FA0AD0056EB2A /* SwiftMessages.swift */; };
+		86BBA8FD1D5E03F800FE8F16 /* SwiftMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864495581D4FA0AD0056EB2A /* SwiftMessage.swift */; };
 		86BBA8FF1D5E040600FE8F16 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E21931D4D50BB00594A41 /* Presenter.swift */; };
 		86BBA9001D5E040600FE8F16 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAF8171D54F0650031EE32 /* PassthroughView.swift */; };
 		86BBA9011D5E040600FE8F16 /* PassthroughWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAF8191D54F0850031EE32 /* PassthroughWindow.swift */; };
@@ -171,7 +171,7 @@
 		862C0CDA1D5A397F00D06168 /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageView.xib; path = Resources/MessageView.xib; sourceTree = "<group>"; };
 		862C0CDB1D5A397F00D06168 /* StatusLine.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StatusLine.xib; path = Resources/StatusLine.xib; sourceTree = "<group>"; };
 		864495551D4F7C390056EB2A /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
-		864495581D4FA0AD0056EB2A /* SwiftMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMessages.swift; sourceTree = "<group>"; };
+		864495581D4FA0AD0056EB2A /* SwiftMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMessage.swift; sourceTree = "<group>"; };
 		8644955C1D4FAF7C0056EB2A /* WindowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowViewController.swift; sourceTree = "<group>"; };
 		86589D461D64B6E40041676C /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		86589D901D692B1B0041676C /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabView.xib; path = Resources/TabView.xib; sourceTree = "<group>"; };
@@ -378,7 +378,7 @@
 		86B48AED1D5A41C900063E2B /* SwiftMessages */ = {
 			isa = PBXGroup;
 			children = (
-				864495581D4FA0AD0056EB2A /* SwiftMessages.swift */,
+				864495581D4FA0AD0056EB2A /* SwiftMessage.swift */,
 				867E21821D4D025200594A41 /* MessageView.swift */,
 				862C0CD81D5A396900D06168 /* Resources */,
 				2244656C1EF1D62700C50413 /* Animations */,
@@ -590,7 +590,7 @@
 				2270044B1FAFA6DD0045DDC3 /* PhysicsAnimation.swift in Sources */,
 				224C3C902C28A2F900B50B18 /* TopBottomPresentable.swift in Sources */,
 				86BBA9041D5E040600FE8F16 /* NSBundle+Extensions.swift in Sources */,
-				86BBA8FD1D5E03F800FE8F16 /* SwiftMessages.swift in Sources */,
+				86BBA8FD1D5E03F800FE8F16 /* SwiftMessage.swift in Sources */,
 				86BBA9021D5E040600FE8F16 /* WindowViewController.swift in Sources */,
 				229F778125FAB1E9008C2ACB /* UIWindow+Extensions.swift in Sources */,
 				86BBA8FF1D5E040600FE8F16 /* Presenter.swift in Sources */,

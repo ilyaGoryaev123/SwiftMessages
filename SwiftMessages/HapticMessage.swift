@@ -12,5 +12,5 @@ import Foundation
  Message views that conform to `HapticMessage` can specify a haptic feedback to be used when presented.
  */
 protocol HapticMessage {
-    var defaultHaptic: SwiftMessages.Haptic? { get }
+    var defaultHaptic: SwiftMessage.Haptic? { get }
 }

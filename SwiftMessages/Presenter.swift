@@ -18,7 +18,7 @@ class Presenter: NSObject {
     
     // MARK: - API
 
-    init(config: SwiftMessages.Config, view: UIView, delegate: PresenterDelegate) {
+    init(config: SwiftMessage.Config, view: UIView, delegate: PresenterDelegate) {
         self.config = config
         self.view = view
         self.delegate = delegate
@@ -34,7 +34,7 @@ class Presenter: NSObject {
     }
     
     var id: String
-    var config: SwiftMessages.Config
+    var config: SwiftMessage.Config
     let maskingView = MaskingView()
     let animator: Animator
     var isHiding = false
@@ -112,7 +112,7 @@ class Presenter: NSObject {
 
     // MARK: - Showing and hiding
 
-    private static func animator(forPresentationStyle style: SwiftMessages.PresentationStyle, delegate: AnimationDelegate) -> Animator {
+    private static func animator(forPresentationStyle style: SwiftMessage.PresentationStyle, delegate: AnimationDelegate) -> Animator {
         switch style {
         case .top:
             return TopBottomAnimation(style: .top, delegate: delegate)

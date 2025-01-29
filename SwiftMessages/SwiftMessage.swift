@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let globalInstance = SwiftMessages()
+private let globalInstance = SwiftMessage()
 
 /**
  The `SwiftMessages` class provides the interface for showing and hiding messages.
@@ -16,7 +16,7 @@ private let globalInstance = SwiftMessages()
  adopt the `Identifiable` protocol (as `MessageView` does) will have duplicates removed.
  */
 @MainActor
-open class SwiftMessages {
+open class SwiftMessage {
     
     /**
      Specifies whether the message view is displayed at the top or bottom
@@ -387,7 +387,7 @@ open class SwiftMessages {
          `WindowViewController` is needed. Use this if you need to supply a custom subclass
          of `WindowViewController`.
          */
-        public var windowViewController: ((_ config: SwiftMessages.Config) -> WindowViewController)?
+        public var windowViewController: ((_ config: SwiftMessage.Config) -> WindowViewController)?
 
         /**
          Supply an instance of `KeyboardTrackingView` to have the message view avoid the keyboard.
@@ -697,7 +697,7 @@ open class SwiftMessages {
  MARK: - Accessing messages
  */
 
-extension SwiftMessages {
+extension SwiftMessage {
 
     /**
      Returns the message view of type `T` if it is currently being shown or hidden.
@@ -744,7 +744,7 @@ extension SwiftMessages {
  MARK: - PresenterDelegate
  */
 
-extension SwiftMessages: PresenterDelegate {
+extension SwiftMessage: PresenterDelegate {
 
     func hide(presenter: Presenter) {
         self.internalHide(presenter: presenter)
@@ -780,7 +780,7 @@ extension SwiftMessages: PresenterDelegate {
  drag-and-dropped into a project as a starting point and modified.
  */
 
-extension SwiftMessages {
+extension SwiftMessage {
     
     /**
      Loads a nib file with the same name as the generic view type `T` and returns
@@ -867,14 +867,14 @@ extension SwiftMessages {
  to `SwiftMessages.sharedInstance.show()`.
  */
 
-extension SwiftMessages {
+extension SwiftMessage {
     
     /**
      A default shared instance of `SwiftMessages`. The `SwiftMessages` class provides
      a set of static APIs that wrap calls to this instance. For example, `SwiftMessages.show()`
      is equivalent to `SwiftMessages.sharedInstance.show()`.
      */
-    nonisolated public static var sharedInstance: SwiftMessages {
+    nonisolated public static var sharedInstance: SwiftMessage {
         return globalInstance
     }
 

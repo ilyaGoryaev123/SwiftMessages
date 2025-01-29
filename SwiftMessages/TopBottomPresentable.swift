@@ -32,7 +32,7 @@ extension PhysicsAnimation: TopBottomPresentable {
 
 // MARK: - Presentation Style Convenience
 
-extension SwiftMessages.PresentationStyle {
+extension SwiftMessage.PresentationStyle {
     /// A temporary workaround to allow custom presentation contexts using `TopBottomAnimation`
     /// to display properly behind bars. THe long term solution is to refactor all of the
     /// presentation context logic to work with safe area insets.

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension SwiftMessages.Config {
+extension SwiftMessage.Config {
     var windowLevel: UIWindow.Level? {
         switch presentationContext {
         case .window(let level): return level

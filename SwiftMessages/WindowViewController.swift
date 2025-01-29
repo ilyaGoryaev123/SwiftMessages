@@ -15,10 +15,10 @@ open class WindowViewController: UIViewController
     }
 
     convenience public init() {
-        self.init(config: SwiftMessages.Config())
+        self.init(config: SwiftMessage.Config())
     }
 
-    public init(config: SwiftMessages.Config) {
+    public init(config: SwiftMessage.Config) {
         self.config = config
         let view = PassthroughView()
         let window = PassthroughWindow(hitTestView: view)
@@ -77,11 +77,11 @@ open class WindowViewController: UIViewController
     private var window: UIWindow?
     private weak var previousKeyWindow: UIWindow?
 
-    let config: SwiftMessages.Config
+    let config: SwiftMessage.Config
 }
 
 extension WindowViewController {
-    static func newInstance(config: SwiftMessages.Config) -> WindowViewController {
+    static func newInstance(config: SwiftMessage.Config) -> WindowViewController {
         return config.windowViewController?(config) ?? WindowViewController(config: config)
     }
 }

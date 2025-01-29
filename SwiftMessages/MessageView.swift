@@ -17,7 +17,7 @@ open class MessageView: BaseView, Identifiable, AccessibleMessage, HapticMessage
      */
     
     /// The default haptic feedback to be used when the message is presented.
-    open var defaultHaptic: SwiftMessages.Haptic?
+    open var defaultHaptic: SwiftMessage.Haptic?
 
     /*
      MARK: - Button tap handler
@@ -191,7 +191,7 @@ extension MessageView {
      - Returns: An instance of generic view type `T: MessageView`.
      */
     public static func viewFromNib<T: MessageView>(layout: Layout, filesOwner: AnyObject = NSNull.init()) -> T {
-        return try! SwiftMessages.viewFromNib(named: layout.rawValue)
+        return try! SwiftMessage.viewFromNib(named: layout.rawValue)
     }
     
     /**
@@ -206,7 +206,7 @@ extension MessageView {
      - Returns: An instance of generic view type `T: MessageView`.
      */
     public static func viewFromNib<T: MessageView>(layout: Layout, bundle: Bundle, filesOwner: AnyObject = NSNull.init()) -> T {
-        return try! SwiftMessages.viewFromNib(named: layout.rawValue, bundle: bundle, filesOwner: filesOwner)
+        return try! SwiftMessage.viewFromNib(named: layout.rawValue, bundle: bundle, filesOwner: filesOwner)
     }
 }
 
@@ -275,11 +275,11 @@ extension MessageView {
         if includeHaptic {
             switch theme {
             case .success, .info:
-                defaultHaptic = SwiftMessages.Haptic.success
+                defaultHaptic = SwiftMessage.Haptic.success
             case .warning:
-                defaultHaptic = SwiftMessages.Haptic.warning
+                defaultHaptic = SwiftMessage.Haptic.warning
             case .error:
-                defaultHaptic = SwiftMessages.Haptic.error
+                defaultHaptic = SwiftMessage.Haptic.error
             }
         }
         switch theme {

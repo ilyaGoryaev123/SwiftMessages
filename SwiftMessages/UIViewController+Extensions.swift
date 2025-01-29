@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController {
     
-    func sm_selectPresentationContextTopDown(_ config: SwiftMessages.Config) -> UIViewController {
+    func sm_selectPresentationContextTopDown(_ config: SwiftMessage.Config) -> UIViewController {
         let topBottomStyle = config.presentationStyle.topBottomStyle
         if let presented = presentedViewController {
             return presented.sm_selectPresentationContextTopDown(config)
@@ -50,7 +50,7 @@ extension UIViewController {
         return nil
     }
 
-    func sm_selectPresentationContextBottomUp(_ config: SwiftMessages.Config) -> UIViewController {
+    func sm_selectPresentationContextBottomUp(_ config: SwiftMessage.Config) -> UIViewController {
         let topBottomStyle = config.presentationStyle.topBottomStyle
         if let parent = parent {
             if let navigationController = parent as? UINavigationController {
